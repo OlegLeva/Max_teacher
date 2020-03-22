@@ -8,7 +8,7 @@ def merge(l1,l2):
     i = 0
     while i < n - 1:
         j = 0
-        while j < n - 1 - i: # < I'm sad(((
+        while j < n - 1 - i:
             if l[j] > l[j + 1]:
                 l[j], l[j + 1] = l[j + 1], l[j]
             j += 1

@@ -4,8 +4,6 @@ def merge(l1,l2):
     l = sorted(l)
     return l
 
-print(merge([26,45,55],[47,49,99]))
-
 
 def find(l, x):
     i = 0
@@ -21,4 +19,7 @@ def find(l, x):
         return 'Нет такого'
     else:
         return m
-print(find([26, 45, 47, 49, 55, 99], 47))
+
+if __name__ == "__main__": 
+    print(merge([26,45,55],[47,49,99]))    
+    print(find([26, 45, 47, 49, 55, 99], 47))

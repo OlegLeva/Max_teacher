@@ -1,3 +1,5 @@
+#l1 = [1,4,5,8]
+#l2 = [2,6,10]
 
 def merge(l1,l2):
     l = l1 + l2
@@ -11,5 +13,6 @@ def merge(l1,l2):
             j += 1
         i += 1
     return l
+
 
 print(merge([1,4,5,8],[2,6,10]))

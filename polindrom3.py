@@ -13,3 +13,5 @@ def word_poly(word):
             return False
 
 print(word_poly('abcbcba'))
+
+# does not work(( I’m probably stupid((

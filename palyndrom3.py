@@ -1,17 +1,21 @@
 
-#Tortured to fight, does not go through "while"
+def palindrom(s):
 
-def word_poly(word):
-    x = len(word.replace(" ", ""))
     i = 0
-    x -= 1
-    while x - 1 >= i:
-        if word[x - 1] == word[i]:
+    j = len(s) - 1
+    while i < j:
+        #if s[i] == ' ':  # ????????
+            #continue
+        while not s[i] and i < j:
             i += 1
-            return True
-        else:
+        #if s[j] == ' ':  # ?????????
+            #continue
+        while not s[j] and i < j:
+            j -= 1
+        if s[i] != s[j]:
             return False
+        i += 1
+        j -= 1
+    return True
+print(palindrom('abcdcba'))
 
-print(word_poly('abcbcba'))
-
-# does not work(( I’m probably stupid((

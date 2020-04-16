@@ -1,4 +1,5 @@
 
+#Tortured to fight, does not go through "while"
 
 def word_poly(word):
     x = len(word.replace(" ", ""))

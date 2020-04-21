@@ -1,17 +1,14 @@
 
-def del_dubl(list3):
-
-    j = len(list3)
+def merge(l1):
+    res = []
+    res.append(l1[0])
     i = 0
-    while i < j - 1:
-        if list3[i] == list3[i+1]:
-            del list3[i]
-    i += 1
+    while i < len(l1)-1:
+        if l1[i] < l1[i+1]:
+            res.append(l1[i+1])
+        if l1[i] == l1[i+1]:
+            pass
+        i += 1
+    return res
 
-
-    return list3
-
-
-
-
-print(del_dubl([-1, 0, 1, 2, 2, 3, 3, 5, 7, 8, 9]))
+print(merge([-1,-1, 0, 1, 2, 2, 3, 3, 5, 7, 8, 9]))

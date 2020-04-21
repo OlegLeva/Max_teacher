@@ -1,5 +1,5 @@
 
-def sor_lis (list1, list2):
+'''def sor_lis (list1, list2):
     list3 = list1 + list2
     j = len(list3)
     n = 0
@@ -11,7 +11,7 @@ def sor_lis (list1, list2):
             i += 1
         n += 1
     return list3
-print(sor_lis([1,2,2,3,3,7,9], [-1,0,5,8]))
+print(sor_lis([1,2,2,3,3,7,9], [-1,0,5,8]))'''
 
 def merge(l1, l2):
     """
@@ -41,3 +41,4 @@ def merge(l1, l2):
     if j < len(l2):
         res.extend(l2[j:])
     return res
+print(merge([1,2,3,4,6], [5,6,7,14,8]))

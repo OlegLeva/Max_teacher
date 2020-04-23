@@ -13,4 +13,4 @@ def merge(l1,l2):
     return l
 
 
-print(merge([1,4,5,8],[2,6,10]))
+print(merge( [1,2,2,3,3,7,9], [-1,0,5,8]))

@@ -27,6 +27,7 @@ def merge(l1, l2):
     [1, 2, 3, 4, 5, 6]
     """
     res = []
+
     i, j = 0, 0
     while i < len(l1) and j < len(l2):
         if l1[i] <= l2[j]:
@@ -41,4 +42,8 @@ def merge(l1, l2):
     if j < len(l2):
         res.extend(l2[j:])
     return res
+
+
+
+
 print(merge([1,2,3,4,6], [5,6,7,14,8]))

@@ -17,3 +17,5 @@ def palindrom(s):
     return True
 print(palindrom('mr owl ate my metal worm'))
 
+
+

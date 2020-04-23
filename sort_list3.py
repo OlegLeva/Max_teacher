@@ -17,12 +17,10 @@ def merge(l1, l2):
     if j < len(l2):
         res.extend(l2[j:])
 
-
-    while r < len(res) - 1:
-        if res[r] == res[r + 1]:
-            del res[r]
-        r += 1
-    return res
+    for n in res:
+        if n not in res1:
+            res1.append(n)
+    return res1
 
 
-print(merge([1, 2, 2, 3, 3, 3, 7, 9], [-1, -1, 0, 5, 5, 8]))
+print(merge([1, 2, 2, 3, 3, 3, 3, 3, 7, 9], [-1, -1, 0, 5, 5, 8]))
